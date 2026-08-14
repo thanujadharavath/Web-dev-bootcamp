@@ -43,8 +43,11 @@ function randomUser(){
     
        userName.innerHTML = newUserName;
        userGender.innerHTML = newUserGender;
-       user
+       userImage.src = newUserImage;
     })
-    
+    .catch(function(err){
+        console.log("Error occured : " + err);
+    }
+
    
 }
